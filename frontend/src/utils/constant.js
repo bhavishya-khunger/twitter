@@ -1,2 +1,2 @@
-export const USER_API_ENDPOINT = "http://localhost:8080/api/v1/user";
-export const TWEET_API_ENDPOINT = "http://localhost:8080/api/v1/tweet"
+export const USER_API_ENDPOINT = import.meta.env.USER_API_ENDPOINT;
+export const TWEET_API_ENDPOINT = import.meta.env.TWEET_API_ENDPOINT;
