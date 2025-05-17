@@ -13,9 +13,14 @@ app.use(express.json());
 app.use(cookieParser());
 
 // CORS
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://twitter-lac-theta.vercel.app'
+];
+
 app.use(cors({
-    origin: "http://localhost:5173",
-    credentials: true,
+  origin: allowedOrigins,
+  credentials: true
 }));
 
 // APIs

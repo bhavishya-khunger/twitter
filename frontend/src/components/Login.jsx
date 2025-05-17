@@ -31,7 +31,7 @@ const Login = () => {
     try {
       if (isLogin) {
         // Login
-        const res = await axios.post(`${USER_API_ENDPOINT}/login`, { username, password }, {
+        const res = await axios.post(`https://twitter-r47g.vercel.app/api/v1/user/login`, { username, password }, {
           headers: {
             "Content-Type": "application/json"
           },
